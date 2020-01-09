@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    Author: Lisa Bosarge
+	Date: April 25, 2019
+    Course: INEW 2434-53400	
+
+    Filename: canvas.html
+   -->
+
+  <meta charset="UTF-8">
+  <title>Lisa's Canvas of Squares</title>
+  
+</head>
+
+<body>
+
+  <div id="mainDiv">
+  
+    <header>
+      <h3>Lisa's Canvas of Squares</h3>
+    </header>
+    
+    <section>
+      <h4>Here is my canvas tag:</h4>
+      <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;"></canvas>     
+    </section>
+    
+    <br><br>
+    <footer>
+      © 2019
+    </footer>
+  </div>
+  
+	  <script type="text/javascript">
+		var c = document.getElementById('myCanvas');
+		var ctx = c.getContext("2d");
+			
+		// Squares and Rectangles
+			// 1 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(1, 1, 150, 100); 
+			ctx.fillStyle = "#000e28";
+			ctx.fill();
+			ctx.stroke();
+
+			// 2 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(150, 1, 150, 100);
+			ctx.fillStyle = "#022868";
+			ctx.fill();
+			ctx.stroke();
+
+			// 3 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(1, 100, 150, 70);
+			ctx.fillStyle = "#013ea5";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 4 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(150, 100, 150, 70);
+			ctx.fillStyle = "#0458e8";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 5 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(1, 170, 35, 130);
+			ctx.fillStyle = "#3a83ff";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 6 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(35, 170, 115, 130);
+			ctx.fillStyle = "#669fff";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 7 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(150, 170, 95, 100);
+			ctx.fillStyle = "#87b4ff";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 8 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(150, 270, 95, 30);
+			ctx.fillStyle = "#9ec3ff";
+			ctx.fill();
+			ctx.stroke();
+			
+			// 9 rectangle
+			ctx.beginPath();
+			ctx.lineWidth = "6";
+			ctx.strokeStyle = "black";
+			ctx.rect(245, 170, 55, 130);
+			ctx.fillStyle = "#b9d1f7";
+			ctx.fill();
+			ctx.stroke();
+	
+       
+	</script>
+
+</body>
+</html>
